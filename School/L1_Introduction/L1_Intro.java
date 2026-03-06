@@ -1,7 +1,7 @@
 public class L1_Intro {
 
     // Attributes
-    private String brand;
+    private String brand; //instance variable - heap
     private String model;
     private int year;
 
@@ -22,10 +22,11 @@ public class L1_Intro {
 
         L1_Intro anotherCar = new L1_Intro("Honda", "Civic", 2024);
         anotherCar.displayDetails();
+
+        L1_Intro anotherCar1 = new L1_Intro("Toyota", "Innova", 2006);
+        anotherCar1.displayDetails(); // calls method by referencing the class above.
     }
-
 }
-
 /*
 Notes during the lab:
 
